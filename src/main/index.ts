@@ -3,6 +3,10 @@ import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 
+import { Storage } from './storage'
+const instance = Storage.getInstance()
+console.log(instance)
+
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({

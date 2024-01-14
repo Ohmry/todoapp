@@ -6,3 +6,6 @@ out
 
 # Git Guardian
 .npmrc
+
+# 로컬에서 개발하는 데이터베이스 파일은 제외한다.
+resources/database.db
