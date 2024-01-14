@@ -28,7 +28,6 @@ export default defineConfig({
         '@resources': resolve('resource')
       }
     },
-    plugins: [vue()],
-    root: 'src/renderer/src/main'
+    plugins: [vue()]
   }
 })
