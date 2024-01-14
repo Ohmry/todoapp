@@ -39,7 +39,7 @@ const pathValue = computed(() => {
 svg {
   width: 35px;
   height: 35px;
-  padding: 10px 0;
+  padding: 10px 0 5px 0;
 }
 svg > path {
   fill: #999;

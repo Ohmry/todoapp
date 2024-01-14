@@ -12,6 +12,7 @@ module.exports = {
   ],
   rules: {
     'vue/require-default-prop': 'off',
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    'vue/no-parsing-error': [2, { 'x-invalid-end-tag': false }]
   }
 }

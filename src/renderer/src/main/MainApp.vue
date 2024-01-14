@@ -4,12 +4,18 @@
   </div>
   <div class="app-container">
     <div class="app-aside">
-      <NavButton icon="checklist"></NavButton>
-      <NavButton icon="kanbanboard"></NavButton>
-      <NavButton icon="ganttchart"></NavButton>
+      <RouterLink to="/checklist">
+        <NavButton icon="checklist"></NavButton>
+      </RouterLink>
+      <RouterLink to="/kanbanboard">
+        <NavButton icon="kanbanboard"></NavButton>
+      </RouterLink>
+      <RouterLink to="/ganttchart">
+        <NavButton icon="ganttchart"></NavButton>
+      </RouterLink>
     </div>
     <div class="app-main">
-      This is Main
+      <RouterView></RouterView>
     </div>
   </div>
 </template>
@@ -36,7 +42,6 @@ div.app-header > title {
 div.app-container {
   position: relative;
   width: 100vw;
-  min-height: calc(100vh - 40px);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -50,5 +55,13 @@ div.app-aside {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+div.app-aside > a.router-link-active > svg > path {
+  fill: #fff;
+}
+div.app-main {
+  position: relative;
+  width: calc(100vw - 50px);
+  height: calc(100vh - 40px);
 }
 </style>
